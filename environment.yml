@@ -1,0 +1,17 @@
+name: binder-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - torch
+  - pandas
+  - matplotlib
+  - numpy
+  - accelerate
+  - huggingface_hub
+  - ipywidgets
+  - voila
+  - pip:
+    - kagglehub

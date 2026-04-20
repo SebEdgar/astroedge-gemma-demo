@@ -1,0 +1,14 @@
+#!/bin/bash
+set -eux
+
+# 1. Installa Rust (risposta automatica "1" per installazione default)
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+
+# 2. Aggiungi Cargo al PATH
+source "$HOME/.cargo/env"
+
+# 3. Installa transformers 5.5.0 (ora Rust è disponibile!)
+pip install transformers==5.5.0
+
+# 4. Verifica l'installazione (opzionale, utile per debug)
+python -c "import transformers; print(f'transformers version: {transformers.__version__}')"
