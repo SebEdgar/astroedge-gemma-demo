@@ -14,7 +14,7 @@ pip install --no-cache-dir transformers==5.5.0
 # Pulisci tutto di nuovo
 pip cache purge
 cargo clean --manifest-path "$HOME/.cargo" 2>/dev/null || true
-rm -rf ~/.rustup/toolchains/*/share/doc ~/.cargo/registry/cache/*
+
 
 # Rimuovi file temporanei
-rm -rf /tmp/*
+rm -rf /tmp/* 2>/dev/null || true
