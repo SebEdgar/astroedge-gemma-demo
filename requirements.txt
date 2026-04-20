@@ -3,6 +3,7 @@ pandas
 matplotlib
 numpy
 kagglehub
-transformers==4.5.0
 accelerate
 huggingface_hub
+ipywidgets
+voila
